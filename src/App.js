@@ -1,23 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/header';
+import Landing from './components/Landing/landing';
+import Carousel from './components/Carousel/carousel';
+import About from './components/About/about';
+import Events from './components/EventsComponent/events';
+import { Speakers } from './components/Speakers/speakers';
+import { Sponsors } from './components/Sponsors/sponsors';
+import { Footer } from './components/Footer/footer';
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+</style>
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header/>
+     <Carousel/>
+     <About/>
+     <Events/>
+     <Speakers/>
+     <Sponsors/>
+     <Footer/>
     </div>
   );
 }
